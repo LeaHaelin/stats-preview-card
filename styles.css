@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080c1b;
+}
+.container {
+  width: 370px;
+  margin: 0 auto;
+  background-color: #080c1b;
+}
+
+.img {
+  width: 330px;
+  margin-left: 20px;
+  margin-top: 70px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  filter: invert(30%) sepia(12%) saturate(2233%) hue-rotate(229deg)
+    brightness(60%) contrast(110%);
+}
+
+.container2 {
+  width: 330px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 23px;
+  padding-bottom: 30px;
+  background-color: #1b1938;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  color: #fbfcfc;
+  font-family: "Inter", sans-serif;
+}
+
+.headline {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.p {
+  padding: 0 30px;
+  line-height: 26px;
+  color: #b3b2c9;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.insights {
+  color: #995ac4;
+}
+
+.box {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  color: #cfd1d2;
+}
+
+.underline {
+  font-size: 13px;
+  padding-top: 10px;
+  color: #8685a0;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 82%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "text bg"
+      "text bg"
+      "text bg";
+  }
+
+  .container2 {
+    grid-area: text;
+    width: 570px;
+    height: 450px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+
+  .img {
+    grid-area: bg;
+    width: 550px;
+    height: 450px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .header {
+    text-align: left;
+    padding: 30px;
+  }
+  .headline {
+    font-size: 40px;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .data {
+    padding: 0 50px;
+  }
+}
